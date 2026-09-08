@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Model weights and adapters (download separately, see README)
+pretrain/*/
+!pretrain/kgqa/
+instruction-tuning/output/
+inference/checkpoint-code/
+inference/checkpoint-text/
+inference/KGQA/KR/instruction-tuning/output/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Knowledge-graph dumps and derived indices (see README)
+pretrain/wikidata5m/
+*.pkl
+
+# Generated corpora, retrieval results and answers (see README for downloads)
+inference/KGQA/graph/
+pretrain/kgqa/code_corpus/
+pretrain/kgqa/text_corpus/
+pretrain/kgqa/corpus_merge/code_corpus/
+pretrain/kgqa/corpus_merge/text_corpus/
+pretrain/kgqa/corpus_merge/ablation-*/
+all_question*.json
+subgraph.json
+*_sparql.json
+*_question.json
+
+# Logs and scratch
+*.log
+nohup.out
+wandb/
+.DS_Store
